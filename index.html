@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Pritjam</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/navbar.css">
+</head>
+
+<body>
+	<div class="header">
+		<h1>Prithvi Jamadagni's Webpage</h1>
+		<p class="motd">Howdy, and welcome to my website!</p>
+	</div>
+
+	<!-- Site navigation menu -->
+	<ul class="navbar">
+		<li><a href="index.html">Home</a></li>
+		<li><a href="games.html">My Games</a></li>
+		<li><a href="projects.html">Projects</a></li>
+		<li><a href="index.html">About Me</a></li>
+	</ul>
+
+	<div class="section">
+		<h2>What's new</h2>
+		<div class="section-item">
+			<h4>Guestbook</h4>
+			<p>The page has a guestbook now! Scroll down to see it.</p>
+		</div>
+		<div class="section-item">
+			<h4>Having fun!</h4>
+			<p>I've gotten into a few different video games recently--the pandemic has definitely given me lots of free time! Recently, I've picked up Star Wars: Battlefront II, a third person shooter
+				game set in the Star Wars universe. It's lots of fun to play with friends. I've also been playing a lot of Elite: Dangerous, the fourth installment in a long-running series of games
+				where you play as a spaceship commander, flying your ship throughout the Milky Way galaxy, blowing up pirates and making tons of money.</p>
+		</div>
+		
+
+		<!-- abcd
+			<div class="section-item">
+				<h4></h4>
+				<p></p>
+			</div>
+			-->
+	</div>
+	<div class="section">
+		<h2>Guest Book</h2>
+		<div class="section-item">
+			<h4>Guestbook Hall of Fame</h4>
+			<table>
+				<tr>
+					<th>Name</th>
+					<th>Message</th>
+					<th>Timestamp</th>
+				</tr>
+			</table>
+		</div>
+		<div class="section-item">
+			<h4>Guestbook Form</h4>
+			<form action="php/guestbookadd.php" method="post" id="guestbookform">
+				<label for="name">Display Name:</label><br>
+				<input type="text" maxlength="20" name="name"><br>
+				<label for="message">Message:</label><br>
+			</form>
+			<textarea form="guestbookform" name="message" placeholder="your message here..." wrap="soft" rows="3" cols="100" maxlength="255"></textarea><br>
+			<input type="submit" name="submut" id="submit" form="guestbookform">
+		</div>
+		<div class="section-item">
+			<h4><a href="php/guestbookview.php">View Guestbook</a></h4>
+		</div>
+	</div>
+</body>
+
+</html>
